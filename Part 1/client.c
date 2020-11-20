@@ -5,7 +5,8 @@
 #include <string.h> 
 #define PORT 8080 
    
-#define SERVER_IP 127.0.0.1
+char SERVER_IP[] = "127.0.0.1"; 
+
 int main(int argc, char const *argv[]) 
 { 
     int sock = 0, valread; 
