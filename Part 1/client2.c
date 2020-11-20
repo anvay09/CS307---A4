@@ -5,7 +5,7 @@
 #include <string.h> 
 #define PORT 8080 
    
-char SERVER_IP[] = "127.0.0.1"; 
+char SERVER_IP[] = "10.0.2.15"; //VM 1 IP
 
 int main(int argc, char const *argv[]) 
 { 
