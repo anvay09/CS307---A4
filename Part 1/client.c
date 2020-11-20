@@ -5,6 +5,7 @@
 #include <string.h> 
 #define PORT 8080 
    
+#define SERVER_IP 127.0.0.1
 int main(int argc, char const *argv[]) 
 { 
     int sock = 0, valread; 
@@ -20,7 +21,7 @@ int main(int argc, char const *argv[])
     serv_addr.sin_family = AF_INET; 
     serv_addr.sin_port = htons(PORT); 
        
-    if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)<=0)  
+    if(inet_pton(AF_INET, SERVER_IP, &serv_addr.sin_addr)<=0)  
     { 
         printf("\nInvalid address/ Address not supported \n"); 
         return -1; 
