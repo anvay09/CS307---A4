@@ -49,6 +49,7 @@ int main(int argc, char const *argv[])
 
     while (1)
     {
+        memset(buffer, 0, 1000);
         valread = read(new_socket, buffer, 1000); 
         char message[1000];
         strcpy(message, buffer);
