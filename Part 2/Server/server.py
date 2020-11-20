@@ -40,7 +40,7 @@ while True:
     (conn, (ip,port)) = tcpsock.accept()
     print('Got connection from ', (ip,port))
     newthread = ClientThread(ip,port,conn)
-    newthread.start()
+    newthread.run()
     threads.append(newthread)
 
 for t in threads:
